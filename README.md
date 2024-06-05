@@ -8,7 +8,7 @@ This is a blog that tracks my leetcode learning path. Each day, I post the below
 - difficulties 自己实现过程中遇到哪些困难
 - others 今日收获，记录一下自己的学习时长
 
-## D-1: Binary Search & Remove Elements
+## D-1: Binary Search 🔍 & Remove Elements 🚮
 
 - [x] Problem 704
   - [x] Problem 35
@@ -51,21 +51,21 @@ This is a blog that tracks my leetcode learning path. Each day, I post the below
       so use **int mid = left+((right-left)/2);** instead of mid = (left+right)/2
     - relate sorted array (with non-duplicated values) to binary search.
 
-## D-2: Two Pointers & Sliding Window
+## D-2: Two Pointers 🙌 & Sliding Window 🛝 & Spiral Matrix 🌀
 
 - [x] Problem 977
-- [x] Problem 209
-  - [ ] Problem 904
-  - [ ] Problem 76
-- [ ] Problem 59
+- [x] Problem 209, medium
+  - [ ] Problem 904, medium
+  - [ ] Problem 76, hard
+- [x] Problem 59, medium
 
-  - [ ] Problem 54
-  - [ ] Problem 146
+  - [ ] Problem 54, medium
+  - [ ] Problem 146, medium
 
 - what I have learned & useful links
   - [977](https://programmercarl.com/0977.%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E7%9A%84%E5%B9%B3%E6%96%B9.html) & [video](https://www.bilibili.com/video/BV1QB4y1D7ep)
   - [209](https://programmercarl.com/0209.%E9%95%BF%E5%BA%A6%E6%9C%80%E5%B0%8F%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84.html) & [video](https://www.bilibili.com/video/BV1tZ4y1q7XE)
-  - [59]() & [video]()
+  - [59](https://programmercarl.com/0059.%E8%9E%BA%E6%97%8B%E7%9F%A9%E9%98%B5II.html#%E7%AE%97%E6%B3%95%E5%85%AC%E5%BC%80%E8%AF%BE) & [video](https://www.bilibili.com/video/BV1SL4y1N7mV/)
 - thoughts:
   - 977
     - find an O(n) solution. Use 2 pointers. The smallest value should be somewhere in the middle unless it's in the leftmost. Therefore, try to compare the 2 edges and put it with index i, after which the relative pointer should increase or decrease.
@@ -74,8 +74,10 @@ This is a blog that tracks my leetcode learning path. Each day, I post the below
       - what is within the window
       - how to move the start pointer
       - how to move the end pointer
-    - in this case, the sliding window is when sum >= target, start pointer moves when when the sum begins to > target and end pointer moves within the for loop.
   - 59
+    - deal with the ranges: [left, right). It means that during each spiral(loop), we add the first element while leave the last element to next loop.
+    - find out how many rounds we move -> n/2 if n is even and consider n is odd as well.
+    - use offeset to find out the elements within the spiral.
   - difficulties
     - how to define a sliding window with correct start and end pointers.
   - others
