@@ -8,31 +8,29 @@ This is a blog that tracks my leetcode learning path. Each day, I post the below
 - difficulties 自己实现过程中遇到哪些困难
 - others 今日收获，记录一下自己的学习时长
 
-## DAY 1: Binary Search & Remove Elements
+## D-1: Binary Search & Remove Elements
 
 - [x] Problem 704
-  - [ ] Problem 35, easy
-  - think about when to use break;
-  - when to find the target, try to get the left and right edges.
+  - [x] Problem 35
   - [ ] Problem 34, medium
-  - [ ] Problem 69, easy
-  - [ ] Problem 367, easy
+  - [ ] Problem 69
+  - [ ] Problem 367
 - [x] Problem 27
 
-  - [x] Problem 26, easy
-  - [x] Problem 283, easy
+  - [x] Problem 26
+  - [ ] Problem 283
     - swap while keeping track of the 2 pointers.
-  - [ ] Problem 844, easy
-  - [ ] Problem 977, easy
+  - [ ] Problem 844
+  - [ ] Problem 977
 
 - what I have learned & useful links
   - [binary search](https://programmercarl.com/0704.%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE.html) & [video](https://www.bilibili.com/video/BV1fA4y1o715/)
   - [remove element](https://programmercarl.com/0027.%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0.html) & [video](https://www.bilibili.com/video/BV12A4y1Z7LP/?spm_id_from=333.788&vd_source=d216e0483cb2bc8d1140b35f1674e41d)
 - thoughts:
   - 704
-    - to identify if the search range if valid or not, we can try to use a value to test, for example, in a while loop, to check if we should use [left, right] or [left, right), we can try to test if it makes senses when left == right.
+    - to identify if the search range if valid or not, we can try to use a value to test, for example, in a while loop, to check if we should use [left, right] or [left, right), we could try to test if it makes senses when left == right.
     - to decide how to move the pointer, i.e, whether left = middle or left = middle +1, we need to go back to chcek the condition. If the condition is if(nums[middle] > target) and if the range is [left, right], it means that middle is definitely not the value that we are looking for, then in this case, we should move to middle+1. In a word, do not duplicate the searching range. However, if the range is [left, right), it means that the next searching range is not including the right pointer, so right = middle or left = middle+1.
-  - 27 -> 2 pointers
+  - 27, use slow and fast pointers.
     - Initialize index to 0, which represents the current position for the next non-target element.
     - Iterate through each element of the input array using the i pointer.
     - For each element nums[i], check if it is equal to the target value.
@@ -43,7 +41,7 @@ This is a blog that tracks my leetcode learning path. Each day, I post the below
     - Finally, return the value of index, which represents the length of the modified array.
   - difficulties
     - how to define the ranges.
-    - how to remove the duplicates in-place.
+    - how to remove the duplicates in-place -> use slow and fast pointers.
   - others
     - integer overflow:
       int left = Integer.MAX_VALUE - 2; // Maximum value of int - 2
@@ -51,10 +49,40 @@ This is a blog that tracks my leetcode learning path. Each day, I post the below
       int mid = left + ((right - left) / 2);
       System.out.println(mid); // Output: 2147483647
       so use **int mid = left+((right-left)/2);** instead of mid = (left+right)/2
+    - relate sorted array (with non-duplicated values) to binary search.
+
+## D-2: Two Pointers & Sliding Window
+
+- [x] Problem 977
+- [x] Problem 209
+  - [ ] Problem 904
+  - [ ] Problem 76
+- [ ] Problem 59
+
+  - [ ] Problem 54
+  - [ ] Problem 146
+
+- what I have learned & useful links
+  - [977](https://programmercarl.com/0977.%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E7%9A%84%E5%B9%B3%E6%96%B9.html) & [video](https://www.bilibili.com/video/BV1QB4y1D7ep)
+  - [209](https://programmercarl.com/0209.%E9%95%BF%E5%BA%A6%E6%9C%80%E5%B0%8F%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84.html) & [video](https://www.bilibili.com/video/BV1tZ4y1q7XE)
+  - [59]() & [video]()
+- thoughts:
+  - 977
+    - find an O(n) solution. Use 2 pointers. The smallest value should be somewhere in the middle unless it's in the leftmost. Therefore, try to compare the 2 edges and put it with index i, after which the relative pointer should increase or decrease.
+  - 209
+    - To dfine a sliding window, we need to think about
+      - what is within the window
+      - how to move the start pointer
+      - how to move the end pointer
+    - in this case, the sliding window is when sum >= target, start pointer moves when when the sum begins to > target and end pointer moves within the for loop.
+  - 59
+  - difficulties
+    - how to define a sliding window with correct start and end pointers.
+  - others
 
 ## Highlights
 
-Data Structures, Binary Search, Two Pointers,
+Data Structures, Binary Search, Two Pointers, Sliding Window,
 
 ![Mengyi Cartoon Pic](/Live,%20Love,%20Learn.png)
 
