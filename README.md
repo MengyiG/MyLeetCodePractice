@@ -21,6 +21,7 @@ This is a blog that tracks my leetcode learning path. Each day, I post the below
 
   - [x] Problem 26, easy
   - [x] Problem 283, easy
+    - swap while keeping track of the 2 pointers.
   - [ ] Problem 844, easy
   - [ ] Problem 977, easy
 
