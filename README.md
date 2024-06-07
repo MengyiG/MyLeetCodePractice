@@ -54,6 +54,7 @@ This is a blog that tracks my leetcode learning path. Each day, I post the below
 ## D-2: Two Pointers 🙌 & Sliding Window 🛝 & Spiral Matrix 🌀
 
 - [x] Problem 977
+  - [x] Problem 88 (be aware when the condition that nums2.length is greater than nums1)
 - [x] Problem 209, medium
   - [ ] Problem 904, medium
   - [ ] Problem 76, hard
@@ -74,12 +75,14 @@ This is a blog that tracks my leetcode learning path. Each day, I post the below
       - what is within the window
       - how to move the start pointer
       - how to move the end pointer
+      - think whether use while or if conditions.
   - 59
     - deal with the ranges: [left, right). It means that during each spiral(loop), we add the first element while leave the last element to next loop.
     - find out how many rounds we move -> n/2 if n is even and consider n is odd as well.
     - use offeset to find out the elements within the spiral.
   - difficulties
     - how to define a sliding window with correct start and end pointers.
+    - in problem 59, the i and j pointer will be changing during each iteration. Therefore, please be aware of starter pointer and how to iterate within the for loop. 
   - others
 
 ## Highlights
