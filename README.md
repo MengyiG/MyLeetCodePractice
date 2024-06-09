@@ -92,19 +92,25 @@ This is a blog that tracks my leetcode learning path. Each day, I try to include
 ### useful links & thoughts
 
 - [LinkedList](https://programmercarl.com/%E9%93%BE%E8%A1%A8%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80.html)
-- 🖇️ [977](https://programmercarl.com/0977.%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E7%9A%84%E5%B9%B3%E6%96%B9.html)
-- 👀 [707](https://programmercarl.com/0707.%E8%AE%BE%E8%AE%A1%E9%93%BE%E8%A1%A8.html)
-- ◀️ [206](https://programmercarl.com/0206.%E7%BF%BB%E8%BD%AC%E9%93%BE%E8%A1%A8.html)
+- 🖇️ [977](https://programmercarl.com/0977.%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E7%9A%84%E5%B9%B3%E6%96%B9.html) - 2 solutions. One is to work with the original linked list while the other is to set up a dummy node.
+- 👀 [707](https://programmercarl.com/0707.%E8%AE%BE%E8%AE%A1%E9%93%BE%E8%A1%A8.html) - I got a pretty difficult time trying to figure out how to addAtIndex. It turned out that the pointer was set to the wrong place.
+- ◀️ [206](https://programmercarl.com/0206.%E7%BF%BB%E8%BD%AC%E9%93%BE%E8%A1%A8.html) - use 2 pointers. The key is to keep a temp pointer that holds the next node, after which to move both the pre and cur pointer; Another solution is to recursively call the mothods.
 
 ### difficulties
 
+- The most challenging for Linked List is to understand node and its pointer. Linked List forms a series of connected nodes, where each node stores the data and the address of the next node.
+- When working with Linked List problems, always think if the very first node should be separated dealth with.
+- Unlike arrays, linked lists do not allow direct access to elements by index. Traversal is required to reach a specific node.
+
 ### others
+
+- Extra Memory: Linked lists require additional memory for storing the pointers, compared to arrays.
 
 ## D-4: Linked List 02
 
 - [x] Problem 24. **Swap Nodes in Pairs**
 - [x] Problem 19. **Remove Nth Node From End of List**
-- [ ] Problem 160. **Intersection of Two Linked Lists**
+- [x] Problem 160. **Intersection of Two Linked Lists**
 - [x] Problem 142. **Linked List Cycle II**
 
 ### useful links & thoughts
