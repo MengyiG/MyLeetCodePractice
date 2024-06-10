@@ -124,6 +124,37 @@ This is a blog that tracks my leetcode learning path. Each day, I try to include
 
 ### others
 
+## D-6: Hash Table 01
+
+- [x] Problem 242. **Valid Anagram**
+- [x] Problem 349. **Intersection of Two Arrays**
+- [x] Problem 202. **Happy Numbers**
+- [x] Problem 1. **Two Sum**
+
+### useful links & thoughts
+
+- [Hash Table](https://programmercarl.com/%E5%93%88%E5%B8%8C%E8%A1%A8%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80.html)
+- 👩🏻‍💻 [242](https://programmercarl.com/0242.%E6%9C%89%E6%95%88%E7%9A%84%E5%AD%97%E6%AF%8D%E5%BC%82%E4%BD%8D%E8%AF%8D.html)
+- ⚔️ [349](https://programmercarl.com/0349.%E4%B8%A4%E4%B8%AA%E6%95%B0%E7%BB%84%E7%9A%84%E4%BA%A4%E9%9B%86.html)
+- 😃 [202](https://programmercarl.com/0202.%E5%BF%AB%E4%B9%90%E6%95%B0.html)
+- 2️⃣ [1](https://programmercarl.com/0001.%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C.html)
+
+### difficulties
+
+### others
+
+## D-6: Hash Table 02
+
+- [x] Problem . **....**
+
+### useful links & thoughts
+
+- [...]()
+
+### difficulties
+
+### others
+
 ---
 
 ![Mengyi Cartoon Pic](/Live,%20Love,%20Learn.png)
