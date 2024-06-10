@@ -127,23 +127,36 @@ This is a blog that tracks my leetcode learning path. Each day, I try to include
 ## D-6: Hash Table 01
 
 - [x] Problem 242. **Valid Anagram**
+  - [ ] Problem 383
+  - [ ] Problem 49
+  - [ ] Problem 438
 - [x] Problem 349. **Intersection of Two Arrays**
+  - [ ] Problem 350
 - [x] Problem 202. **Happy Numbers**
 - [x] Problem 1. **Two Sum**
 
 ### useful links & thoughts
 
 - [Hash Table](https://programmercarl.com/%E5%93%88%E5%B8%8C%E8%A1%A8%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80.html)
+  - Hash Collision Techniques.
 - 👩🏻‍💻 [242](https://programmercarl.com/0242.%E6%9C%89%E6%95%88%E7%9A%84%E5%AD%97%E6%AF%8D%E5%BC%82%E4%BD%8D%E8%AF%8D.html)
+  - This is quite easy. We just need iterate the two strings and use hash table to keep track of the frequency of the letters. Then, we can just check if the frequency is zero.
 - ⚔️ [349](https://programmercarl.com/0349.%E4%B8%A4%E4%B8%AA%E6%95%B0%E7%BB%84%E7%9A%84%E4%BA%A4%E9%9B%86.html)
+  - HashSet sacrifices space for time.
+  - Hash Table(array) is another option. (on the condition that the numbers are limited.)
+  - Be aware when transforming the result ArrayList or set to array. (resSet.stream().mapToInt(x -> x).toArray();)
 - 😃 [202](https://programmercarl.com/0202.%E5%BF%AB%E4%B9%90%E6%95%B0.html)
+  - Use a private method to get the new number and use set to check if the sum is duplicated.
 - 2️⃣ [1](https://programmercarl.com/0001.%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C.html)
+  - Think of a running hashmap.
 
 ### difficulties
 
+- Use % to get the digits of a number in problem 202. Get ones first and use /10 to get the next digit.
+
 ### others
 
-## D-6: Hash Table 02
+## D-7: Hash Table 02
 
 - [x] Problem . **....**
 
