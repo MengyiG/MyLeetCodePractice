@@ -158,6 +158,39 @@ This is a blog that tracks my leetcode learning path. Each day, I try to include
 
 ## D-7: Hash Table 02
 
+- [x] Problem 454. medium **4Sum II**
+- [x] Problem 383. **Ransom Note**
+- [x] Problem 15. medium **3Sum**
+- [x] Problem 18. medium **4Sum**
+
+### useful links & thoughts
+
+- 4️⃣ [454](https://programmercarl.com/0454.%E5%9B%9B%E6%95%B0%E7%9B%B8%E5%8A%A0II.html)
+- 📒 [383](https://programmercarl.com/0383.%E8%B5%8E%E9%87%91%E4%BF%A1.html)
+- 3️⃣ [15](https://programmercarl.com/0015.%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C.html)
+- ➕ [18](https://programmercarl.com/0018.%E5%9B%9B%E6%95%B0%E4%B9%8B%E5%92%8C.html)
+
+### difficulties
+
+### others
+
+- when adding integers, be aware of the potential overflow. By casting to long, you ensure that the intermediate sum can accommodate larger values:
+
+  correct:
+
+  ```java
+  long sum = (long) nums[i] + nums[j] + nums[left] + nums[right];
+  ```
+
+  ```java
+  // Incorrect: This might still overflow before casting to long
+  long sum = (long) (nums[i] + nums[j] + nums[left] + nums[right]);
+  ```
+
+  casting each element to long before summing them, rather than casting the sum after adding the int values, ensures that the addition is performed using long arithmetic. If you don't cast before adding, you risk overflow during the addition.
+
+## D-8:
+
 - [x] Problem . **....**
 
 ### useful links & thoughts
