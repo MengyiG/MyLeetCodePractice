@@ -176,7 +176,7 @@ This is a blog that tracks my leetcode learning path. Each day, I try to include
 
 ### difficulties
 
-- in problem 15 and 15, the question to remove duplicate indices are tricy. If we use
+- in problem 15 and 18, the question to remove duplicate indices are tricky. If we use
   ```java
   if (i > 0 && nums[i] == nums[i - 1]) {
       continue;
@@ -213,7 +213,32 @@ This is a blog that tracks my leetcode learning path. Each day, I try to include
 
   casting each element to long before summing them, rather than casting the sum after adding the int values, ensures that the addition is performed using long arithmetic. If you don't cast before adding, you risk overflow during the addition.
 
-## D-8:
+## D-8: String 01
+
+- [x] Problem 344. **Reverse String**
+- [x] Problem 541. **Reverse String II**
+- [x] Problem 54. **Spiral Matrix**
+
+### useful links & thoughts
+
+- 🔄 [344](https://programmercarl.com/0344.%E5%8F%8D%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2.html) - use 2 pointers or bitwise operators.
+- ↩️ [541](https://programmercarl.com/0541.%E5%8F%8D%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2II.html) - Similar to problem 344, the tricky part is to
+  - deal with the rest k elements. (think about Math.min to get the end pointers or check if i+k <= ch.length).
+  - how to increment index.
+- ⊹ [54](https://programmercarl.com/kama54.◊%E6%9B%BF%E6%8D%A2%E6%95%B0%E5%AD%97.html)
+
+### difficulties
+
+### others
+
+- bitwise XOR (exclusive OR) operator:
+  - If the corresponding bits are the same (both 0 or both 1), the result bit is 0.
+  - If the corresponding bits are different (one is 0 and the other is 1), the result bit is 1.
+    we can use this operator when
+  - swapping Two Numbers Without a Temporary Variable.
+  - flipping bits.
+
+## D-9:
 
 - [x] Problem . **..**
 
