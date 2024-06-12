@@ -217,7 +217,7 @@ This is a blog that tracks my leetcode learning path. Each day, I try to include
 
 - [x] Problem 344. **Reverse String**
 - [x] Problem 541. **Reverse String II**
-- [x] Problem 54. **Spiral Matrix**
+- [x] Problem 54. **替换数字** from [KamaCoder](https://kamacoder.com/problempage.php?pid=1064)
 
 ### useful links & thoughts
 
@@ -225,7 +225,23 @@ This is a blog that tracks my leetcode learning path. Each day, I try to include
 - ↩️ [541](https://programmercarl.com/0541.%E5%8F%8D%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2II.html) - Similar to problem 344, the tricky part is to
   - deal with the rest k elements. (think about Math.min to get the end pointers or check if i+k <= ch.length).
   - how to increment index.
-- ⊹ [54](https://programmercarl.com/kama54.◊%E6%9B%BF%E6%8D%A2%E6%95%B0%E5%AD%97.html)
+- ⊹ [54](https://kamacoder.com/problempage.php?pid=1064)
+  - get the number of digits: count
+  - create new array by s.length()+5\*count.
+  - copy the original array to the newly created array:
+    ```java
+    System.arraycopy(s.toCharArray(), 0, newS, 0, sOldSize);
+    ```
+  - replace from the last char of the new array. If not digit, keep it; otherwise, use index to get the letter:
+    ```java
+    newS[i] = 'r';
+    newS[i - 1] = 'e';
+    newS[i - 2] = 'b';
+    newS[i - 3] = 'm';
+    newS[i - 4] = 'u';
+    newS[i - 5] = 'n';
+    i -= 5;
+    ```
 
 ### difficulties
 
