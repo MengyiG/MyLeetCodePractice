@@ -165,12 +165,36 @@ This is a blog that tracks my leetcode learning path. Each day, I try to include
 
 ### useful links & thoughts
 
-- 4️⃣ [454](https://programmercarl.com/0454.%E5%9B%9B%E6%95%B0%E7%9B%B8%E5%8A%A0II.html)
-- 📒 [383](https://programmercarl.com/0383.%E8%B5%8E%E9%87%91%E4%BF%A1.html)
+- 4️⃣ [454](https://programmercarl.com/0454.%E5%9B%9B%E6%95%B0%E7%9B%B8%E5%8A%A0II.html) - it asked to return the number of tuples and all nums are of length n, which makes it easier. Use 2 hash maps. One hashmap is to iterate nums1 and nums2 to get the sum and the other to get the sum of nums3 and nums3. Check if the sum of nums3 and nums4 exist in the map, if yes, then we can add to the res.
+- 📒 [383](https://programmercarl.com/0383.%E8%B5%8E%E9%87%91%E4%BF%A1.html) - easy one, use hash table to iterate the 2 strings and check if any element of this hash table is below zero.
 - 3️⃣ [15](https://programmercarl.com/0015.%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C.html)
-- ➕ [18](https://programmercarl.com/0018.%E5%9B%9B%E6%95%B0%E4%B9%8B%E5%92%8C.html)
+  - sort by Arrays.sort()
+  - rule out the condition when the first few elements <= 0 as the smallest element should be greater than zero. Be aware when i == 0.
+  - use twoSum to get the result.
+  - in twoSum, use 2 pointers. The left pointer should be i+1, and right pointer should be nums.length-1. Pay attention to the condition the indexes should not be duplicated.
+- ➕ [18](https://programmercarl.com/0018.%E5%9B%9B%E6%95%B0%E4%B9%8B%E5%92%8C.html)- similar to problem 15. Also need to rule out the condition when nums[i]>0 && nums[i] > target, and when i > 0 && nums[i - 1] == nums[i]. This is to reinforce problem 15 solutions.
 
 ### difficulties
+
+- in problem 15 and 15, the question to remove duplicate indices are tricy. If we use
+  ```java
+  if (i > 0 && nums[i] == nums[i - 1]) {
+      continue;
+  }
+  ```
+  then, we are judging if the current element is the same as the previous one. In nums={-1, -1 ,2}, the code works. However, if I use,
+  ```java
+  if (nums[i] == nums[i + 1]) {
+  continue;
+  }
+  ```
+  then, nums={-1, -1 ,2}, would be ruled out, which is not corrent.
+- how to remove the second and third duplicated results:
+
+  ```java
+    while (right > left && nums[right] == nums[right - 1]) right--;
+    while (right > left && nums[left] == nums[left + 1]) left++;
+  ```
 
 ### others
 
@@ -191,11 +215,11 @@ This is a blog that tracks my leetcode learning path. Each day, I try to include
 
 ## D-8:
 
-- [x] Problem . **....**
+- [x] Problem . **..**
 
 ### useful links & thoughts
 
-- [...]()
+- [..]()
 
 ### difficulties
 
@@ -210,3 +234,7 @@ Know more about **me** by
 - 🙋🏻‍♀️ going to my [Website](https://mengyig.github.io/#)
 - 😁 visiting my [LinkedIn](https://www.linkedin.com/in/mengyi-guo/)
 - 🎥 checking my [Youtube](https://www.youtube.com/channel/UCu7Q8pfeEvjgTxVyj7YVxHw)
+
+```
+
+```
